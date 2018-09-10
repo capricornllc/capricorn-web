@@ -1,0 +1,99 @@
+.main {
+    position: relative;
+    -height: 83.5vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.phone {
+    display: none;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    position: absolute;
+    height: 50vh;
+    padding-bottom: 5rem;
+    max-width: 64rem;        
+}
+
+.mobileTop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    position: absolute;
+    height: 50vh;
+    padding-bottom: 5rem;
+    max-width: 64rem;        
+}
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: right;
+    width: 100%;
+    justify-content: flex-end;
+    height: 7rem;
+    position: absolute;
+    bottom: 1rem;
+    padding: 2rem;
+    max-width: 74rem;        
+}
+
+.logo {
+    max-width: 22rem;
+    width: 100%;    
+}
+
+.logo > img {
+    margin: 0;
+}
+
+.mobileMessage {
+    display: none;
+}
+
+@media only screen 
+and (max-device-width : 767px) { 
+
+    .mobileMessage {
+    }
+
+    .mobileTop {
+        display: initial;
+        font-size: 3.1rem;            
+        color: white;
+        line-height: 4.5rem;
+        text-align: center;
+        position: absolute;
+        bottom: calc(50% - 8rem);
+        height: 11rem;
+        z-index: 1;
+        padding: 0 1rem;
+        max-width: 40rem;
+    }
+
+    .bottom, .top {
+        display: none
+    }
+
+    .main > .phone {
+        position: relative;
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0, 0, 0, 0.3);
+    }
+}

@@ -1,0 +1,61 @@
+.main {
+    position: relative;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    background-color: #007190;
+    justify-content: left;
+    padding: 4rem 4rem;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 100%;
+    font-weight: 600;    
+    height: 4rem;
+    color: #ffffff;
+    max-width: 64rem;    
+    font-size: 2.5rem;
+    font-family: Playfair Display; 
+}
+
+.message {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    max-width: 64rem;        
+    justify-content: left;
+    color: #ffffff;  
+    font-size: 1.25rem;
+    line-height: 2rem;
+    font-family: NowRegular,sans-serif;
+    white-space: pre-line;
+}
+
+.learn {
+    max-width: 64rem; 
+    margin-top: 4rem;  
+}
+
+.learn > button {
+    cursor: pointer;
+    padding: 0.5rem 6rem;
+    color: #ffffff;
+    border-radius: 0.25rem;
+    background-color: #007190;
+    box-shadow: none;
+    font-weight: 600;
+    border: 0.1rem solid #007190;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    font-family: NowRegular,sans-serif;
+}
+
+.learn > button:hover {
+    background-color: transparent;
+    color: #007190;
+}

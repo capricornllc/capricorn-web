@@ -1,0 +1,20 @@
+.phone {
+    display: none;
+}
+
+.desktop {
+    display: initial;
+}
+
+@media only screen 
+and  (max-device-width : 767px) { 
+    .phone {
+        display: initial;
+    }
+
+
+.desktop {
+    display: none; 
+}
+
+}

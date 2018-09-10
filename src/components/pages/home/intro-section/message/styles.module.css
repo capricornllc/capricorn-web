@@ -1,0 +1,27 @@
+.main {
+    max-width: 50rem;
+    font-size: 4rem;
+    color: white;
+    line-height: 4.5rem;
+    text-align: center;
+    height: 15rem;    
+}
+
+strong {
+    color: #00a7d1;    
+}
+
+@media only screen 
+and (max-width : 1100px) { 
+    .main {
+        display: none;
+    }
+}
+
+@media only screen 
+and  (max-device-width : 767px) { 
+    .main {
+        display: initial;
+        font-size: 3.1rem;
+    }
+}

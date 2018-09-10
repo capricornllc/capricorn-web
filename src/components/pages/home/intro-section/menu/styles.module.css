@@ -1,0 +1,43 @@
+.main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 44rem;
+    width: 100%;
+}
+
+.menuItem > a {
+    font-size: 1.25rem;
+    font-family: 'NowRegular', sans-serif;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.menuItem > a:hover {
+    color: #00a7d1;
+}
+
+
+.menuItem > a:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0.3rem;
+    background: #00a7d1;
+    transition: width .3s;
+}
+
+.menuItem > a:hover:after {
+    width: 100%;
+    //transition: width .3s;
+}
+
+@media only screen 
+and  (max-device-width : 767px) { 
+    .main {
+        display: none
+    }
+}

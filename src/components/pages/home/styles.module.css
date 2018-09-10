@@ -1,0 +1,25 @@
+.waypoint        {
+    position: relative;
+    z-index: -1;
+    height: 4rem;
+    margin-top: -4rem;
+}
+
+.phone {
+    display: none;
+}
+
+@media only screen 
+and  (max-device-width : 767px) { 
+    .waypoint {
+        display: none;
+    }
+
+    .rightSlide {
+        display: none;
+    }   
+
+    .phone {
+        display: initial;
+    }
+}

@@ -1,0 +1,89 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    z-index: 1001;    
+}
+
+.header {
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    z-index: 1001;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    align-items: center;
+}
+
+.menuTop {
+    display: inline;
+    height: 8rem;
+}
+
+.hamburguer {
+    width: 3rem;
+    height: 3rem;
+    top: 2rem;
+    margin: 0 4rem;
+    position: fixed;
+    cursor: pointer;
+    z-index: 1002;
+    transition: all .2s ease-in-out;
+}
+
+.hamburguer:hover {
+    transform: scale(1.1);
+}
+
+.logo {
+    width: 50%;
+    max-width: 20rem;
+    margin: 0;
+}
+
+.menuItem:first-child {
+    border-top: .2rem solid #00a7d1;    
+}
+
+.menuItem {
+    background: white;
+    border-bottom: 0.1rem solid #ccc;
+}
+
+.menuItem > a {
+    font-size: 1.5rem;
+    font-family: 'NowRegular', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1.25rem 0 1.25rem 4rem;
+    color: #838992;    
+}
+
+
+.menuItem > a:hover {
+    color: #00a7d1!important;
+}
+
+.menuItem > a:visited,
+.menuItem > a:active {
+    color: #838992;    
+}
+
+.active > a {
+    color: #00a7d1!important;
+}
+
+.white > a{
+    color: white;
+}
+
+.active.white > a{
+    -color: #3b3b3b!important;
+}
+
+.menuItem > a {
+    display: inline-block;
+    text-decoration: none;
+}

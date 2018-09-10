@@ -1,0 +1,151 @@
+.videoContainer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: hidden;
+    z-index: 0;
+
+    position: relative;
+    -padding-bottom: 42.7%;
+    padding-top: 0;
+    -height: 0;
+    overflow: hidden;
+}
+
+.videoContainer video {
+    /* Make video to at least 100% wide and tall */
+    -min-width: 100%; 
+    -min-height: 100%; 
+  
+    /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+    width: 100%;
+  
+    /* Center the video */
+    -position: absolute;
+    -top: 50%;
+    -left: 50%;
+    -transform: translate(-50%,-50%);
+
+    opacity: 0.85;
+}
+
+
+.buttonWrapper {
+    background: rgba(0,0,0,.3);    
+}
+
+.button {
+    display: none;
+}
+
+.mobileTop, .phone {
+    display: none;
+}
+
+.desktop { 
+    display: block;
+}
+
+.firstPlay{
+    display: inline-block;
+    margin: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;    
+    z-index: 1;
+}
+
+@media only screen 
+and  (max-device-width : 767px) { 
+    .videoContainer{
+        -margin-top: 8rem;
+        height: auto;
+        z-index: 1;    
+    }
+
+    .desktop { 
+        display: none;
+    }
+
+    .phone {
+        display: block;
+    }
+
+    .buttonWrapper {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        z-index: 2;    
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+
+    .button {
+        display: inline-flex;
+        position: absolute;
+        width: 5rem;
+        right: 0;
+        bottom: 0;
+        height: 5rem;
+        padding-right: 2rem;
+        transition: opacity 1s ease-in-out;
+    }
+
+    .play {
+        opacity: 0;
+    }
+
+    .pause { 
+        opacity: .8;
+    }
+
+
+.mobileTop {
+    display: initial;
+    font-size: 3.1rem;            
+    color: white;
+    line-height: 4.5rem;
+    text-align: center;
+    position: absolute;
+    height: auto;
+    z-index: 1;
+    margin: auto;
+}
+}
+
+@media only screen and (orientation:portrait) and  (max-device-width : 767px)  { 
+    .mobileTop  {    
+     width: 100%;
+    font-size: 2rem;
+    line-height: 3rem;
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+.mobileTop > div {
+    max-width: 25rem;    
+}
+
+.mobileTop > div > p {
+    margin: 0;
+}
+}
+@media only screen and (orientation:landscape) and  (max-device-width : 767px)  { 
+    .mobileTop  {    
+        width: 100%;
+        font-size: 3.1rem;
+        line-height: 4.5rem;
+        max-width: 38rem;
+        position: relative;
+   } 
+   
+   .mobileTop > div > p {
+       margin: 0;
+   }
+ }

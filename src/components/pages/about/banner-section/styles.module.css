@@ -1,0 +1,24 @@
+.main {
+    position: relative;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: left;
+    background-color: rgba(0, 99, 131, 0.8);
+    padding: 6rem 4rem;
+}
+
+.message {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    width: 100%;
+    justify-content: left;
+    font-family: 'NowRegular', sans-serif;            
+    color: #ffffff;  
+    font-size: 1.25rem;
+    line-height: 2rem;
+    max-width: 64rem;    
+}

@@ -1,0 +1,163 @@
+.main {
+    position: relative;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 4rem 12rem 4rem;  
+}
+
+.title {
+    height: 6rem;
+    color: #0F1435;
+    font-size: 1.7rem;
+    line-height: 2.5rem; 
+    font-weight: 700;    
+    font-family: 'NowRegular', sans-serif;    
+}
+
+.green {
+    color: #00a7d1;    
+}
+.blue {
+    color: #007190;    
+}
+
+.text {
+    padding-bottom: 4rem;
+    max-width: 64rem;        
+    color: #838992;   
+    font-family: 'NowRegular', sans-serif;     
+}
+
+.learnBlue {
+    position: absolute;
+    max-width: 64rem;
+    bottom: 3rem;   
+}
+
+.learnBlue > a > button {
+    cursor: pointer;
+    color: #ffffff;
+    box-shadow: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 0.5rem 6rem;    
+    border-radius: 0.25rem;
+    background-color: #007190;
+    border: 0.1rem solid #007190;
+    font-family: 'NowRegular', sans-serif;    
+}
+
+.learnBlue > a > button:hover {
+    background-color: transparent;
+    color: #007190;
+}
+
+.learnGreen {
+    position: absolute;
+    max-width: 64rem;
+    bottom: 3rem;
+}
+
+.learnGreen > a > button {
+    cursor: pointer;
+    padding: 0.5rem 6rem;
+    color: #ffffff;
+    border-radius: 0.25rem;
+    background-color: #00a7d1;
+    box-shadow: none;
+    font-weight: 600;
+    border: 0.1rem solid #00a7d1;
+    font-size: 0.95rem;
+    font-family: NowRegular,sans-serif;
+    text-transform: uppercase;    
+}
+
+.learnGreen > a > button:hover {
+    background-color: transparent;
+    color: #00a7d1;
+}
+
+.partners {
+    max-width: 64rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.partner {
+    background: white;
+    padding: 3rem;
+    max-width: 30rem;
+    position: relative;
+}
+
+@media only screen 
+and  (max-device-width : 767px) { 
+
+    .main {
+        padding: 6rem 4rem 6rem;
+    }
+
+    .partners {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .partner {
+        margin-bottom: 1rem;
+        padding: 2rem;
+        max-width: 100%;
+        -max-width: 15rem;
+    
+    }
+
+    .text {
+        padding: 0;
+    }
+
+    .learnBlue ,
+    .learnGreen {
+        display: none;        
+        max-width: 21rem;
+        bottom: 2rem;
+        width: 100%;
+    }
+
+    .learnBlue > button,
+    .learnGreen > button {
+        padding: 1rem 2rem;
+        width: 100%;
+    }
+
+    .learnMobile  {
+        cursor: pointer;
+        padding: .5rem 6rem;
+        color: #fff;
+        border-radius: .25rem;
+        background-color: #007190;
+        box-shadow: none;
+        font-weight: 600;
+        border: .1rem solid #007190;
+        font-size: .95rem;
+        text-transform: uppercase;
+        font-family: NowRegular,sans-serif;
+        padding: 0.8rem 5.3rem;
+        font-size: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .learnMobile > a > button {
+        background: transparent;
+        color: white;
+        height: 1.5rem;
+        border: 0;
+    }
+
+    .title {
+        height: auto;
+    }
+}

@@ -1,0 +1,202 @@
+.main {
+    position: relative;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding: 0rem 3rem 0 3rem;  
+}
+
+.top {
+    width: 100%;
+    background: #007190;
+    height: 1px;
+    position: absolute;   
+}
+
+.home {
+    height: 1px;
+}
+
+.withBackground {
+    border-bottom: 0.5px solid #fff;        
+}
+
+.withTopBackground {
+    border-top: 0.5px solid #fff;
+    background: transparent;
+    height: 1px;
+}
+
+.noBackground {
+    border-bottom: .05rem solid #007190; 
+}
+
+.middle.noBackground {
+    border-bottom: .05rem solid #007190; 
+}
+
+.middle {
+    width: 100%;
+    max-width: 64rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 3rem;
+    padding-bottom: 9rem;
+}
+
+.bottom {
+    width: 100%;
+    max-width: 64rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 10rem;
+    font-weight: 600;
+    font-size: 0.75rem;
+    color: white;
+}
+
+.logo > img {
+    padding-bottom: 1rem;
+}
+
+.menus {
+    width: 100%;
+    max-width: 50rem;
+    height: auto;
+    display: flex;
+    justify-content: space-between;    
+    padding-left: 4rem;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu > a {
+    color: #007190;
+    font-size: 0.75rem;
+    font-weight: 900;
+    font-family: 'NowRegular', sans-serif;        
+    text-decoration: none;    
+}
+
+.menu > a:visited,
+.menu > a:active {
+    color: #007190;
+
+}
+
+.whiteMenu > a,
+.whiteMenu > a:visited,
+.whiteMenu > a:active,
+.whiteMenu > .sections > a,
+.whiteMenu > .sections > a:visited,
+.whiteMenu > .sections > a:active {
+    color:white!important;
+}
+
+.sections > a {
+    color: #838992;    
+    font-size: 0.75rem;
+    text-decoration: none;    
+    font-family: 'NowRegular', sans-serif;   
+}
+
+.sections {
+    display: flex;
+    flex-direction: column;
+}
+
+.sections > a:visited,
+.sections > a:active {
+        color: #838992;
+     
+}
+
+.technicals, .socials {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.technicals > a {
+    color: #838992;    
+    margin-right: 1rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    font-family: 'NowRegular', sans-serif;        
+    text-decoration: none;  
+}
+
+.technicals > a:visited,
+.technicals > a:active {
+    color: #838992;        
+}
+
+.socials > a,
+.socials > a:visited,
+.socials > a:active {
+    color: inherit;    
+    font-size: 0.75rem;
+    font-weight: 600;
+    font-family: 'NowRegular', sans-serif;        
+    text-decoration: none;  
+}
+
+.socials > a > img {
+    width: 1rem;
+    height: 1rem;
+    margin: 0.5rem;
+}
+
+.fixed  {
+    bottom: 0;
+    background: white;
+    position: absolute;
+    width: 100%;
+}
+
+.phone {
+    height: 100%;
+    padding: 2rem 4rem;
+}
+
+@media only screen 
+and  (max-device-width : 767px) { 
+
+
+    .miniFooter {
+        text-align: center;
+        padding: 2rem 0; 
+        border-top: 1px solid  #007190;   
+        border-bottom: 1px solid #007190;       
+    }
+
+    .miniFooter > img{
+        width: 75%;
+    }
+
+    .technicals {        
+    flex-direction: column;
+    }
+
+    .technicals > a {
+        font-size: 1.8rem;
+        padding: 1rem 0;
+        font-weight: 400;
+    }
+
+    .socials > a > img {
+        width: 2rem;
+    margin: 1rem;   
+        height: 2rem;
+    }
+}

@@ -1,0 +1,27 @@
+.gradient {
+    /* background-size: cover;
+    -moz-box-shadow: inset 0px 650px 500px -500px #fff;
+    -webkit-box-shadow: inset 0px 650px 500px -500px #fff;
+    -o-box-shadow: inset 0px 650px 500px -500px #fff;
+    box-shadow: inset 0px 650px 500px -500px #fff; */
+    -background: linear-gradient(to bottom, white, transparent);
+    
+}
+
+.full {
+    width: 100%;
+    position: relative;
+}
+
+.bottom > img {
+    bottom: 0;
+}
+
+@media only screen 
+and  (max-device-width : 767px) { 
+
+    .cover {
+        background-size: cover;
+    }
+
+}
