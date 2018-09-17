@@ -6,29 +6,18 @@
     height: 100%; 
     overflow: hidden;
     z-index: 0;
-
+    display: inline-block;
     position: relative;
-    -padding-bottom: 42.7%;
     padding-top: 0;
-    -height: 0;
     overflow: hidden;
 }
 
 .videoContainer video {
-    /* Make video to at least 100% wide and tall */
-    -min-width: 100%; 
-    -min-height: 100%; 
-  
     /* Setting width & height to auto prevents the browser from stretching or squishing the video */
     width: 100%;
-  
-    /* Center the video */
-    -position: absolute;
-    -top: 50%;
-    -left: 50%;
-    -transform: translate(-50%,-50%);
-
     opacity: 0.85;
+    background-size: cover;
+    background-repeat: none;
 }
 
 
@@ -45,7 +34,8 @@
 }
 
 .desktop { 
-    display: block;
+    display: inline-block;
+    margin-bottom: -1rem;
 }
 
 .firstPlay{
@@ -60,7 +50,7 @@
 @media only screen 
 and  (max-device-width : 767px) { 
     .videoContainer{
-        -margin-top: 8rem;
+        display: inline-block;
         height: auto;
         z-index: 1;    
     }
@@ -70,7 +60,8 @@ and  (max-device-width : 767px) {
     }
 
     .phone {
-        display: block;
+        display: inline-block;
+        margin-bottom: -1rem;
     }
 
     .buttonWrapper {
@@ -105,7 +96,7 @@ and  (max-device-width : 767px) {
 
 
 .mobileTop {
-    display: initial;
+    display: inline-block;
     font-size: 3.1rem;            
     color: white;
     line-height: 4.5rem;

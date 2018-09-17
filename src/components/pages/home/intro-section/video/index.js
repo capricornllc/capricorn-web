@@ -13,8 +13,8 @@ class Video extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            playing: false,
-            firstPlay: true,
+            playing: true,
+            firstPlay: false,
         };
     }
 
@@ -49,7 +49,7 @@ class Video extends React.Component {
                     <source src={API_URL + this.props.video} key="video" type="video/mp4" />
                 </video>
                 {firstPlay ? <img className={styles.firstPlay} src={frame} /> : null}
-                <video ref="vidRef" className={styles.phone} loop muted playsinline="playsinline">
+                <video ref="vidRef" className={styles.phone} autoPlay="autoPlay" loop muted playsinline="playsinline">
                     <source src={API_URL + this.props.video} key="video" type="video/mp4" />
                 </video>
             </div>
