@@ -7,13 +7,12 @@ Make sure that you have the Gatsby CLI program installed:
 npm install --global gatsby-cli
 ```
 
-And run from your CLI:
+Install project dependencies:
 ```sh
-gatsby new gatsby-example-site
+npm install
 ```
 
 Then you can run it by:
 ```sh
-cd gatsby-example-site
-npm run develop
+gatsby develop
 ```
