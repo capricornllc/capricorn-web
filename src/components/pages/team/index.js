@@ -8,7 +8,6 @@ import styles from './styles.module.css';
 import StackGrid from 'react-stack-grid';
 
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import classnames from 'classnames';
 
 import linkedinIconActive from '../../../assets/icons/linkedinIconActive.svg';
 
@@ -27,7 +26,7 @@ class Card extends Component {
             <Fader animateHeight={false} id={`active-${member.id}`} >
                 <div className={styles.activeMember}>
                     <div className={styles.card}>
-                        <img className={classnames(styles.image, styles.selected)} src={member['Avatar'].url} />
+                        <img className={styles.image} src={member['Avatar'].url} />
                     </div>
                     <div className={styles.info} >
                         <div className={styles.infoHeader}>

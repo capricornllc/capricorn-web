@@ -13,7 +13,6 @@
     
 }
 
-
 .main {
     position: relative;
     height: auto;
@@ -41,8 +40,8 @@
     padding: 1rem 4rem 0 40%;
     font-family: 'NowRegular', sans-serif;  
     position: absolute;
-    border-bottom-left-radius: 10rem;
-    border-top-left-radius: 10rem; 
+    border-bottom-left-radius: 30rem;
+    border-top-left-radius: 30rem; 
 }
 
 .infoSocial {
@@ -108,13 +107,6 @@
     text-decoration: none;
 }
 
-.selected {
-    width: 22rem;
-    position: absolute;
-    height: 22rem;
-    left: -1rem;
-}
-
 .personWrapper {
     width: 14rem;
     height: 14rem;
@@ -154,6 +146,8 @@
     margin: 0;
     transition: all .2s ease-in-out;
     z-index: -1;
+    width: 100%;
+    height: 100%;
 }
 
 .image:hover:not(.activeFaded) {
@@ -263,8 +257,11 @@ and (max-device-width : 767px) {
         text-align: center;
         font-size: 1.2rem;
     }
+}
 
-    .selected {
-        position: relative;
-    }
+@media all and (-ms-high-contrast:none) {
+    *::-ms-backdrop, .info {
+        top: 0;
+        left: 0;
+     }
 }
