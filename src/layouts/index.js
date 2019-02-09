@@ -8,7 +8,7 @@ import './index.css';
 const Layout = ({ children, data }) => (
     <div>
         <Helmet
-            title={ "Capricorn Investment Group" }
+            title={ 'Capricorn Investment Group' }
             meta={[
                 { name: 'description', content: 'Capricorn Investment Group was created in 2000 to demonstrate the promise that it is possible to invest profitably while driving sustainable positive change. Today Capricorn manages the assets for Jeff Skoll, the Skoll Foundation and others who strive for extraordinary investment results by leveraging market forces to accelerate large scale impact. The firm invests in the public equity, fixed income, private equity, and real assets markets across the globe. Capricorn has offices in Palo Alto, California, and New York, New York.' },
                 { name: 'keywords', content: 'Finance, FinTech, Venture Capital' },
@@ -19,7 +19,9 @@ const Layout = ({ children, data }) => (
                 { href:'https://fonts.googleapis.com/css?family=Playfair+Display', rel:'stylesheet' },
                 { rel:'stylesheet', href:'https://fontlibrary.org/face/now', type:'text/css' }
             ]}
-        />
+        >
+            <script src="https://cdn.polyfill.io/v2/polyfill.min.js" />
+        </Helmet>
         <div
             style={{
                 margin: '0',
