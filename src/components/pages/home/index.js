@@ -41,17 +41,17 @@ class Home extends React.Component {
 
         // Home Page
         const homePage =
-            data.allStrapiHomepage.edges &&
-            data.allStrapiHomepage.edges[0].node;
+            data.allStrapiHomepages.edges &&
+            data.allStrapiHomepages.edges[0].node;
 
         // Goals and Values
         const goalsAndValues =
-            data.allStrapiGoalsandvalue.edges;
+            data.allStrapiGoalsandvalues.edges;
 
         // Group Logos
         const groupLogos =
-            data.allStrapiGrouppage.edges &&
-            data.allStrapiGrouppage.edges[0].node;
+            data.allStrapiGrouppages.edges &&
+            data.allStrapiGrouppages.edges[0].node;
 
         const _handleWaypointEnter = () => {
             this.setState(() => ({ stickyNav: false }));
@@ -69,7 +69,7 @@ class Home extends React.Component {
                 <IntroSection
                     key="intro"
                     history={history}
-                    message={homePage['HomeMessage']}
+                    message={homePage['HomeMessageText']}
                     video={homePage['DesktopVideoCover']}
                     image={homePage['MobileImageCover']}
                     logo={generalSettings[`Logo${homePage['LogoVersion'].trim()}`]}

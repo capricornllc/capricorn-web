@@ -47,7 +47,7 @@ const PartnersSection = ({
                         {
                             sustainablePartners.map(({ node: { Image, Website } }) => (
                                 <a href={Website} target="_blank">
-                                    <img src={Image.url} />
+                                    {Image && <img src={Image.url} />}
                                 </a>
                             ))
                         }

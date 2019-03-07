@@ -17,8 +17,8 @@ const DisclosurePage = ({ data, history }) => {
 
     // Disclosures Page
     const disclosuresPage =
-        data.allStrapiTechnicalpage.edges &&
-        data.allStrapiTechnicalpage.edges[0].node;
+        data.allStrapiTechnicalpages.edges &&
+        data.allStrapiTechnicalpages.edges[0].node;
 
     return (
         <div>
@@ -58,7 +58,7 @@ query DisclosuresPageQuery {
         }
       }
     }
-    allStrapiTechnicalpage {
+    allStrapiTechnicalpages {
         edges {
           node {
             Disclosures

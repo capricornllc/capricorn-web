@@ -59,7 +59,7 @@ query GroupPageQuery {
       }
     }
   }
-  allStrapiGrouppage(limit: 1) {
+  allStrapiGrouppages(limit: 1) {
     edges {
       node {
         IntroText

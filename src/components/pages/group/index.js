@@ -33,8 +33,8 @@ class Group extends React.Component {
 
         // J Page
         const groupPage =
-            data.allStrapiGrouppage
-                ? (data.allStrapiGrouppage.edges && data.allStrapiGrouppage.edges[0].node)
+            data.allStrapiGrouppages
+                ? (data.allStrapiGrouppages.edges && data.allStrapiGrouppages.edges[0].node)
                 : false;
 
 

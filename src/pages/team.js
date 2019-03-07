@@ -17,7 +17,7 @@ const TeamPage = ({ data, history }) => {
 
     // Team Members 
     const members =
-        data.allStrapiTeammember.edges;
+        data.allStrapiTeammembers.edges;
 
     const investment = members.filter(({ node: { Team } }) => Team && Team.includes('Investment'));
     const operations = members.filter(({ node: { Team } }) => Team && Team.includes('Operations'));
@@ -65,7 +65,7 @@ query TeamPageQuery {
         }
       }
     }
-    allStrapiTeammember {
+    allStrapiTeammembers {
         edges {
           node {
             id

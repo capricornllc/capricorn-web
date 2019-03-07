@@ -18,8 +18,8 @@ const TermsPage = ({ data, history }) => {
 
     // Terms Page
     const termsPage =
-        data.allStrapiTechnicalpage.edges &&
-        data.allStrapiTechnicalpage.edges[0].node;
+        data.allStrapiTechnicalpages.edges &&
+        data.allStrapiTechnicalpages.edges[0].node;
 
     return (
         <div>
@@ -59,7 +59,7 @@ query TermsPageQuery {
         }
       }
     }
-    allStrapiTechnicalpage {
+    allStrapiTechnicalpages {
         edges {
           node {
             TermsOfUse

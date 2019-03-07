@@ -59,7 +59,7 @@ query AboutPageQuery {
       }
     }
   }
-  allStrapiAboutpage(limit: 1) {
+  allStrapiAboutpages(limit: 1) {
     edges {
       node {
         MissionText
@@ -68,7 +68,7 @@ query AboutPageQuery {
       }
     }
   }
-  allStrapiGoalsandvalue {
+  allStrapiGoalsandvalues {
     edges {
       node {
         Title

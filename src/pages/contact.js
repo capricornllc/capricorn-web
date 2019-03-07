@@ -18,7 +18,7 @@ const ContactPage = ({ data, history }) => {
 
     // General Settings
     const contacts =
-        data.allStrapiContact.edges;
+        data.allStrapiContacts.edges;
 
 
     return (
@@ -76,7 +76,7 @@ query ContactsPageQuery {
         }
       }
     }
-    allStrapiContact {
+    allStrapiContacts {
       edges {
         node {
             Longitude

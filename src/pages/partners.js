@@ -18,17 +18,16 @@ const PartnersPage = ({ data, history }) => {
 
         // Partners Page
     const partnerPage =
-        data.allStrapiPartnerpage.edges &&
-        data.allStrapiPartnerpage.edges[0].node;
+        data.allStrapiPartnerpages.edges &&
+        data.allStrapiPartnerpages.edges[0].node;
     
     // Partners
     const partners =
-        data.allStrapiPartner.edges;
+        data.allStrapiPartners.edges;
 
 
     const networkPartners = partners.filter(({ node: { PartnerType } }) => PartnerType.includes('NetworkOfPartners'));
     const sustainablePartners = partners.filter(({ node: { PartnerType } }) => PartnerType.includes('SustainableInvestmentPartners'));
-
 
     return (
         <div>
@@ -99,7 +98,7 @@ query PartnersPageQuery {
         }
       }
     }
-    allStrapiPartner {
+    allStrapiPartners {
       edges {
         node {
           PartnerType
@@ -110,7 +109,7 @@ query PartnersPageQuery {
         }
       }
     }
-    allStrapiPartnerpage {
+    allStrapiPartnerpages {
         edges {
             node {
                 NetworkPartnersText

@@ -19,12 +19,12 @@ class About extends React.Component {
 
         // About Page
         const aboutPage =
-            data.allStrapiAboutpage.edges &&
-            data.allStrapiAboutpage.edges[0].node;
+            data.allStrapiAboutpages.edges &&
+            data.allStrapiAboutpages.edges[0].node;
 
         // Goals and Values
         const goalsAndValues =
-            data.allStrapiGoalsandvalue.edges;
+            data.allStrapiGoalsandvalues.edges;
 
         return (
             <div>

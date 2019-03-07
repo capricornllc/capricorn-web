@@ -47,10 +47,10 @@ query HomePageQuery {
       }
     }
   }
-  allStrapiHomepage(limit: 1) {
+  allStrapiHomepages(limit: 1) {
     edges {
       node {
-        HomeMessage
+        HomeMessageText
         MobileImageCover {
           url
         }
@@ -66,7 +66,7 @@ query HomePageQuery {
       }
     }
   }
-  allStrapiGoalsandvalue {
+  allStrapiGoalsandvalues {
     edges {
       node {
         Title
@@ -77,7 +77,7 @@ query HomePageQuery {
       }
     }
   }
-  allStrapiGrouppage(limit: 1) {
+  allStrapiGrouppages(limit: 1) { 
     edges {
       node {
         SkollWorldLogo {
