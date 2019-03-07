@@ -3,6 +3,10 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import 'babel-polyfill';
 
+import appleTouchIcon from '../assets/icons/apple-touch-icon.png';
+import favicon32 from '../assets/icons/favicon-32x32.png';
+import favicon16 from '../assets/icons/favicon-16x16.png';
+
 import './index.css';
 
 const Layout = ({ children, data }) => (
@@ -17,7 +21,10 @@ const Layout = ({ children, data }) => (
                 { rel: 'stylesheet', type: 'text/css', charset:'UTF-8', href: 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css', },
                 { rel: 'stylesheet', type: 'text/css', href: 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css', },
                 { href:'https://fonts.googleapis.com/css?family=Playfair+Display', rel:'stylesheet' },
-                { rel:'stylesheet', href:'https://fontlibrary.org/face/now', type:'text/css' }
+                { rel:'stylesheet', href:'https://fontlibrary.org/face/now', type:'text/css' },
+                { rel:'apple-touch-icon', sizes: '152x152', href: appleTouchIcon },
+                { rel:'icon', type: 'image/png', sizes: '32x32', href: favicon32 },
+                { rel:'icon', type: 'image/png', sizes: '16x16', href: favicon16 },
             ]}
         >
             <script src="https://cdn.polyfill.io/v2/polyfill.min.js" />
