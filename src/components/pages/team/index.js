@@ -59,7 +59,7 @@ class Person extends Component {
         const { member, handleClick, active, activeTeam = null } = this.props;
 
         return (
-            <AnchorLink href={'#info'} onClick={() => handleClick(member)} className={styles.tile}>
+            <AnchorLink href={'#main'} onClick={() => handleClick(member)} className={styles.tile}>
                 <div className={`${styles.personWrapper} ${active ? styles.active : ''}`}><img className={`${styles.image} ${active ? styles.activeFaded : ''} ${activeTeam && !member['Team'].includes(activeTeam) ? styles.faded : ''}`} src={member['Avatar'].url} /></div>
                 <div className={styles.member}>
                     <div className={styles.name}>
@@ -121,12 +121,12 @@ class Team extends Component {
         const { members, selectedMember, openBio, activeTeam } = this.state;
 
         return (
-            <div>
+            <div id="main">
                 <div className={styles.tintCover}>
                     <div className={styles.imageCover} style={{ backgroundImage: `url(${city})` }}>
                     </div>
                 </div>
-                <div className={styles.main} id="main">
+                <div className={styles.main}>
                     <div id="info" />
                     {(openBio) ?
                         (
