@@ -43,7 +43,7 @@
 }
 
 .menuItem:first-child {
-    border-top: .2rem solid #00a7d1;    
+    border-top: .2rem solid #006383;    
 }
 
 .menuItem {
@@ -63,7 +63,7 @@
 
 
 .menuItem > a:hover {
-    color: #00a7d1!important;
+    color: #006383!important;
 }
 
 .menuItem > a:visited,
@@ -72,7 +72,7 @@
 }
 
 .active > a {
-    color: #00a7d1!important;
+    color: #006383!important;
 }
 
 .white > a{

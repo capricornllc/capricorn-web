@@ -22,5 +22,16 @@ module.exports = {
                 ]
             },
         },
+        {
+            resolve: 'gatsby-plugin-sass',
+            options: {
+                filetypes: {
+                    '.modules.css': { syntax: 'postcss-scss' },
+                },
+                cssLoaderOptions: {
+                    localIdentName: '[hash:base64:5]'
+                },
+            },
+        },
     ],
 };

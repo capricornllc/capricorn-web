@@ -9,7 +9,7 @@
 }
 
 .tintCover{
-    background:#00a7d1;
+    background:#006383;
     
 }
 
@@ -40,12 +40,10 @@
     padding: 1rem 4rem 0 40%;
     font-family: 'NowRegular', sans-serif;  
     position: absolute;
-    border-bottom-left-radius: 30rem;
-    border-top-left-radius: 30rem; 
 }
 
 .infoSocial {
-    background: #00a7d1;
+    background: #006383;
     width: 2.5rem;
     height: 2.5rem;
     border-radius: 3rem;
@@ -74,7 +72,7 @@
 
 .infoName {
     text-transform: uppercase;
-    color: #00a7d1;
+    color: #006383;
     font-weight: 900;
     font-size: 1.2rem;
 }
@@ -102,7 +100,7 @@
 .tile {
     display: flex;
     width: 15rem;
-    margin: .5rem;
+    margin: .5rem 0;
     flex-direction: column;
     text-decoration: none;
 }
@@ -116,7 +114,7 @@
     display: flex;
     flex-direction: column;
     margin: 0;
-    padding: 1rem 0 0 0;
+    padding: 1rem 1rem 0 0;
     line-height: 1rem;
 }
 
@@ -129,10 +127,9 @@
 }
 
 .active {
-    background: #00a7d1;
+    background: #006383;
     width: 14rem;
     height: 14rem;
-    border-radius: 40rem;
     z-index: 1;
 }
 
@@ -142,7 +139,6 @@
 
 .image {
     object-fit: cover;
-    border-radius: 30rem;
     margin: 0;
     transition: all .2s ease-in-out;
     z-index: -1;
@@ -167,10 +163,11 @@
 
 .name {
     text-transform: uppercase;
-    color: #00a7d1;
+    color: #006383;
     font-weight: 900;
     font-size: 0.8rem;
-    font-family: 'NowRegular', sans-serif;            
+    font-family: 'NowRegular', sans-serif;     
+    text-align: center;       
 }
 
 .title {
@@ -195,7 +192,6 @@
     padding: .5rem 3rem;
     margin: 0.5rem;
     color: #838992;
-    border-radius: 0.25rem;
     background-color: transparent;
     box-shadow: none;
     font-weight: 600;
@@ -206,13 +202,13 @@
 
 .typeButton > button:hover {
     background-color: transparent;
-    color: #00a7d1;
+    color: #006383;
 }
 
 .typeButton > .activeButton {
-    background-color: #00a7d1;
-    border: 0.1rem solid #00a7d1;    
-    color: #fff;
+    background-color: #006383!important;
+    border: 0.1rem solid #006383;    
+    color: #fff!important;
 }
 
 @media only screen 
